@@ -1,0 +1,66 @@
+/*
+ * Design tokens.
+ * Single source of truth for color, spacing and typography.
+ * Components should reference these variables instead of hardcoding values.
+ */
+
+:root {
+  /* Color - deep atmosphere palette (dark navy, sky + sun accents) */
+  --color-bg: #0a0f1c;
+  --color-bg-elevated: #0f1626;
+  --color-surface: #141d31;
+  --color-surface-hover: #1a2540;
+  --color-border: #232f4a;
+
+  --color-text-primary: #eef1f8;
+  --color-text-secondary: #9aa5bd;
+  --color-text-muted: #6b7690;
+
+  --color-accent-sky: #5ec8ff;
+  --color-accent-sky-soft: rgba(94, 200, 255, 0.12);
+  --color-accent-sun: #ffb454;
+  --color-accent-sun-soft: rgba(255, 180, 84, 0.12);
+
+  --color-danger: #ff6b6b;
+  --color-danger-soft: rgba(255, 107, 107, 0.12);
+  --color-success: #5ed6a4;
+
+  /* Typography */
+  --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.5rem;
+  --fs-xl: 2rem;
+  --fs-2xl: 2.75rem;
+  --fs-3xl: 4rem;
+
+  /* Spacing scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+
+  /* Layout */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --content-max-width: 1120px;
+
+  /* Shadow */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.24);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.28);
+  --shadow-glow-sky: 0 0 32px rgba(94, 200, 255, 0.14);
+
+  /* Motion */
+  --transition-fast: 140ms ease;
+  --transition-base: 220ms ease;
+}
