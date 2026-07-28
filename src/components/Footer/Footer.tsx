@@ -4,15 +4,15 @@ export function Footer() {
   return (
     <footer className={styles.footer}>
       <p>
-        Data from{' '}
+        Data dari{' '}
         <a href="https://open-meteo.com" target="_blank" rel="noreferrer">
           Open-Meteo
         </a>
       </p>
       <p>
-        Built by{' '}
-        <a href="https://github.com" target="_blank" rel="noreferrer">
-          your name
+        Dibuat oleh{' '}
+        <a href="https://github.com/ardiwirya" target="_blank" rel="noreferrer">
+          Ardi Wirya
         </a>
       </p>
     </footer>

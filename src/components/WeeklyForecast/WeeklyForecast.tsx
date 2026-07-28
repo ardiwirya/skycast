@@ -11,7 +11,7 @@ interface WeeklyForecastProps {
 export function WeeklyForecast({ days }: WeeklyForecastProps) {
   return (
     <section>
-      <h2 className={styles.title}>7-day forecast</h2>
+      <h2 className={styles.title}>Prakiraan 7 hari</h2>
       <div className={styles.list}>
         {days.map((day) => {
           const { label, icon: Icon } = getWeatherCodeInfo(day.weatherCode);

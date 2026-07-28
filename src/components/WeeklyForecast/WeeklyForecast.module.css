@@ -55,6 +55,7 @@
 
 .rainIcon {
   font-size: 1rem;
+  color: var(--color-accent-petal);
 }
 
 .temperatures {

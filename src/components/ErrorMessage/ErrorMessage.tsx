@@ -13,7 +13,7 @@ export function ErrorMessage({ message, onRetry }: ErrorMessageProps) {
       <p className={styles.message}>{message}</p>
       {onRetry && (
         <button type="button" className={styles.retryButton} onClick={onRetry}>
-          Try again
+          Coba lagi
         </button>
       )}
     </div>

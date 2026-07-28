@@ -1,32 +1,33 @@
 /**
- * Formats an ISO time string (e.g. "2026-07-27T14:00") into "2 PM".
+ * Formats an ISO time string (e.g. "2026-07-27T14:00") into a 24-hour
+ * hour label, e.g. "06".
  */
 export function formatHour(isoTime: string): string {
   const date = new Date(isoTime);
-  return date.toLocaleTimeString('en-US', { hour: 'numeric' });
+  return date.toLocaleTimeString('id-ID', { hour: 'numeric' });
 }
 
 /**
- * Formats an ISO time string into a clock time, e.g. "05:42 AM".
+ * Formats an ISO time string into a clock time, e.g. "05.42".
  */
 export function formatClockTime(isoTime: string): string {
   const date = new Date(isoTime);
-  return date.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+  return date.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' });
 }
 
 /**
- * Formats an ISO date string into a short weekday label, e.g. "Mon".
- * Returns "Today" for the current date.
+ * Formats an ISO date string into a short weekday label, e.g. "Sen".
+ * Returns "Hari Ini" for the current date.
  */
 export function formatWeekday(isoDate: string): string {
   const date = new Date(isoDate);
   const today = new Date();
 
   if (date.toDateString() === today.toDateString()) {
-    return 'Today';
+    return 'Hari Ini';
   }
 
-  return date.toLocaleDateString('en-US', { weekday: 'short' });
+  return date.toLocaleDateString('id-ID', { weekday: 'short' });
 }
 
 /**
@@ -48,13 +49,14 @@ export function getDayProgress(currentTime: string, sunrise: string, sunset: str
 }
 
 /**
- * Formats an ISO date string into a readable full date, e.g. "Monday, 27 Jul".
+ * Formats an ISO date string into a readable full date, e.g. "Selasa, 28 Juli 2026".
  */
 export function formatFullDate(isoDate: string): string {
   const date = new Date(isoDate);
-  return date.toLocaleDateString('en-US', {
+  return date.toLocaleDateString('id-ID', {
     weekday: 'long',
     day: 'numeric',
-    month: 'short',
+    month: 'long',
+    year: 'numeric',
   });
 }

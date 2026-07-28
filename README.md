@@ -4,11 +4,11 @@ A weather forecast web app built with React, TypeScript and Vite. Search any cit
 
 ## Live Demo
 
-https://your-demo.vercel.app
+[Live Demo](https://indo-skycast.vercel.app/)
 
 ## Preview
 
-assets/preview.png
+![Screencapture](/assets/preview.png)
 
 ## Features
 
@@ -34,7 +34,7 @@ assets/preview.png
 ## Installation
 
 ```bash
-git clone https://github.com/<your-username>/skycast.git
+git clone https://github.com/ardiwirya/skycast.git
 cd skycast
 npm install
 ```
@@ -117,11 +117,3 @@ src/
 
 - Weather and geocoding data from [Open-Meteo](https://open-meteo.com/)
 - Icons from [React Icons](https://react-icons.github.io/react-icons/)
-
-## Author
-
-Your Name — [GitHub](https://github.com/your-username) · [LinkedIn](https://linkedin.com/in/your-username)
-
-## License
-
-Licensed under the [MIT License](./LICENSE).

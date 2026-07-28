@@ -32,7 +32,7 @@ export function useWeather(location: GeoLocation | null): UseWeatherResult {
       })
       .catch(() => {
         if (!isStale) {
-          setError('Could not load the forecast. Please try again.');
+          setError('Gagal memuat prakiraan cuaca. Silakan coba lagi.');
         }
       })
       .finally(() => {

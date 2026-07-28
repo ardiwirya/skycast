@@ -26,47 +26,47 @@ export interface WeatherCodeInfo {
 export function getWeatherCodeInfo(code: number, isDay = true): WeatherCodeInfo {
   switch (code) {
     case 0:
-      return { label: 'Clear sky', icon: isDay ? WiDaySunny : WiNightClear };
+      return { label: 'Cerah', icon: isDay ? WiDaySunny : WiNightClear };
     case 1:
-      return { label: 'Mostly clear', icon: isDay ? WiDaySunny : WiNightClear };
+      return { label: 'Cerah berawan', icon: isDay ? WiDaySunny : WiNightClear };
     case 2:
-      return { label: 'Partly cloudy', icon: isDay ? WiDayCloudy : WiNightAltCloudy };
+      return { label: 'Berawan sebagian', icon: isDay ? WiDayCloudy : WiNightAltCloudy };
     case 3:
-      return { label: 'Overcast', icon: WiCloudy };
+      return { label: 'Mendung', icon: WiCloudy };
     case 45:
     case 48:
-      return { label: 'Fog', icon: WiFog };
+      return { label: 'Berkabut', icon: WiFog };
     case 51:
     case 53:
     case 55:
-      return { label: 'Drizzle', icon: isDay ? WiDayShowers : WiNightAltShowers };
+      return { label: 'Gerimis', icon: isDay ? WiDayShowers : WiNightAltShowers };
     case 56:
     case 57:
-      return { label: 'Freezing drizzle', icon: isDay ? WiDayShowers : WiNightAltShowers };
+      return { label: 'Gerimis beku', icon: isDay ? WiDayShowers : WiNightAltShowers };
     case 61:
     case 63:
     case 65:
-      return { label: 'Rain', icon: WiRain };
+      return { label: 'Hujan', icon: WiRain };
     case 66:
     case 67:
-      return { label: 'Freezing rain', icon: WiRain };
+      return { label: 'Hujan beku', icon: WiRain };
     case 71:
     case 73:
     case 75:
     case 77:
-      return { label: 'Snow', icon: WiSnow };
+      return { label: 'Salju', icon: WiSnow };
     case 80:
     case 81:
     case 82:
-      return { label: 'Rain showers', icon: isDay ? WiDayShowers : WiNightAltShowers };
+      return { label: 'Hujan lokal', icon: isDay ? WiDayShowers : WiNightAltShowers };
     case 85:
     case 86:
-      return { label: 'Snow showers', icon: WiSnow };
+      return { label: 'Salju lokal', icon: WiSnow };
     case 95:
     case 96:
     case 99:
-      return { label: 'Thunderstorm', icon: WiThunderstorm };
+      return { label: 'Badai petir', icon: WiThunderstorm };
     default:
-      return { label: 'Cloudy', icon: WiCloud };
+      return { label: 'Berawan', icon: WiCloud };
   }
 }

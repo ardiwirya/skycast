@@ -5,6 +5,13 @@
   margin-bottom: var(--space-3);
 }
 
+.date {
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
 .scrollArea {
   display: flex;
   gap: var(--space-3);

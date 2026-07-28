@@ -9,12 +9,12 @@ interface WeatherDetailsProps {
 
 export function WeatherDetails({ current }: WeatherDetailsProps) {
   const stats = [
-    { label: 'Humidity', value: `${current.humidity}%`, icon: WiHumidity },
-    { label: 'Wind speed', value: `${current.windSpeed} km/h`, icon: WiStrongWind },
-    { label: 'Pressure', value: `${current.pressure} hPa`, icon: WiBarometer },
-    { label: 'Visibility', value: `${current.visibility} km`, icon: WiFog },
-    { label: 'Sunrise', value: formatClockTime(current.sunrise), icon: WiSunrise },
-    { label: 'Sunset', value: formatClockTime(current.sunset), icon: WiSunset },
+    { label: 'Kelembapan', value: `${current.humidity}%`, icon: WiHumidity },
+    { label: 'Kecepatan angin', value: `${current.windSpeed} km/j`, icon: WiStrongWind },
+    { label: 'Tekanan udara', value: `${current.pressure} hPa`, icon: WiBarometer },
+    { label: 'Jarak pandang', value: `${current.visibility} km`, icon: WiFog },
+    { label: 'Matahari terbit', value: formatClockTime(current.sunrise), icon: WiSunrise },
+    { label: 'Matahari terbenam', value: formatClockTime(current.sunset), icon: WiSunset },
   ];
 
   return (

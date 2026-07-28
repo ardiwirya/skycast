@@ -26,7 +26,7 @@ export function CurrentWeather({ location, current }: CurrentWeatherProps) {
         <div>
           <p className={`${styles.temperature} tabular-nums`}>{current.temperature}°</p>
           <p className={styles.condition}>{label}</p>
-          <p className={styles.feelsLike}>Feels like {current.feelsLike}°</p>
+          <p className={styles.feelsLike}>Terasa seperti {current.feelsLike}°</p>
         </div>
       </div>
 
@@ -36,8 +36,8 @@ export function CurrentWeather({ location, current }: CurrentWeatherProps) {
           <div className={styles.dayProgressMarker} style={{ left: `${dayProgress}%` }} />
         </div>
         <div className={styles.dayProgressLabels}>
-          <span>Sunrise {formatClockTime(current.sunrise)}</span>
-          <span>Sunset {formatClockTime(current.sunset)}</span>
+          <span>Terbit {formatClockTime(current.sunrise)}</span>
+          <span>Terbenam {formatClockTime(current.sunset)}</span>
         </div>
       </div>
     </section>

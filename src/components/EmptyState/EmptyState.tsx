@@ -5,9 +5,9 @@ export function EmptyState() {
   return (
     <div className={styles.wrapper}>
       <WiDaySunny className={styles.icon} aria-hidden="true" />
-      <h2 className={styles.title}>Search for a city to get started</h2>
+      <h2 className={styles.title}>Cari kota untuk memulai</h2>
       <p className={styles.subtitle}>
-        Look up any city to see current conditions and the 7-day forecast.
+        Cari kota mana pun untuk melihat kondisi cuaca saat ini dan prakiraan 7 hari ke depan.
       </p>
     </div>
   );

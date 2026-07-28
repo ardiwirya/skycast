@@ -25,18 +25,18 @@ export function SearchBar({ onSelectCity }: SearchBarProps) {
           type="text"
           value={query}
           onChange={(event) => setQuery(event.target.value)}
-          placeholder="Search for a city…"
+          placeholder="Cari kota…"
           className={styles.input}
-          aria-label="Search for a city"
+          aria-label="Cari kota"
         />
       </div>
 
       {showResults && (
         <ul className={styles.results}>
-          {isSearching && <li className={styles.status}>Searching…</li>}
+          {isSearching && <li className={styles.status}>Mencari…</li>}
 
           {!isSearching && results.length === 0 && (
-            <li className={styles.status}>No cities found</li>
+            <li className={styles.status}>Kota tidak ditemukan</li>
           )}
 
           {!isSearching &&

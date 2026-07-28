@@ -9,7 +9,7 @@ export function Navbar() {
           <WiCloud className={styles.brandIcon} aria-hidden="true" />
           <span className={styles.brandName}>Skycast</span>
         </div>
-        <p className={styles.tagline}>Weather forecast, done simply</p>
+        <p className={styles.tagline}>Weather Forecast</p>
       </div>
     </header>
   );

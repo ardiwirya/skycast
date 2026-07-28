@@ -4,7 +4,7 @@ interface LoaderProps {
   label?: string;
 }
 
-export function Loader({ label = 'Loading forecast…' }: LoaderProps) {
+export function Loader({ label = 'Memuat prakiraan cuaca…' }: LoaderProps) {
   return (
     <div className={styles.wrapper} role="status" aria-live="polite">
       <span className={styles.spinner} aria-hidden="true" />
