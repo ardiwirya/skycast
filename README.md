@@ -3,7 +3,7 @@
 A weather forecast web app built with React, TypeScript and Vite. Search any city to see current conditions, an hourly outlook for today, and a 7-day forecast.
 
 ## Live Demo
-
+ 
 [Live Demo](https://indo-skycast.vercel.app/)
 
 ## Preview
